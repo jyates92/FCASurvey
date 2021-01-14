@@ -29,12 +29,12 @@
         <input type="tel" id="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
         <label for="number"> Number</label>
         <input type="number" id="number" min="0" max="100" placeholder="enter a number between 0-100" required>
-        <select name="sandwiches" id="sandwiches">
-            <option value="ham">ham</option>
-            <option value="turkey">turkey</option>
-            <option value="BLT">BLT</option>
-            <option value="reuben">reuben</option>
-          </select>
+        <input type="radio" id="maleGender" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="femaleGender" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="Other">Other</label><br>
         <button id="submit">SUBMIT</button>
 
     </form>
