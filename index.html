@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <head>
-    <style>
-        .container {
-  width: 500px;
-  clear: both;
-        }
+  <style>
+    .container {
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+    }
 
-.container input {
-  width: 100%;
-  clear: both;
-  margin-bottom: 20px;
-}
+    p,
+    h1 {
+      text-align: center;
+    }
 
-
-    </style>
-
+    .container input {
+      width: 100%;
+      clear: both;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1 id="title"></h1>
-    <p id="description">Contact Form</p> 
-    <div class="container">
+  <h1 id="title">SURVEY FORM</h1>
+  <p id="description">This is a survey form</p>
+  <div class="container">
     <form id="survey-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="email@email.com" required>
-        <label for="phoneNumber">Phone Number</label>
-        <input type="tel" id="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
-        <label for="number"> Number</label>
-        <input type="number" id="number" min="0" max="100" placeholder="enter a number between 0-100" required>
-        <input type="radio" id="maleGender" name="gender" value="Male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="femaleGender" name="gender" value="Female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="Other">
-        <label for="Other">Other</label><br>
-        <input type="checkbox" id="femaleCheckbox" name="gender" value="Female">
-        <label for="femaleCheckbox"> I am a woman</label>
-        <input type="checkbox" id="maleCheckbox" name="gender" value="Female">
-        <label for="femaleCheckbox"> I am a man</label>
-        <input type="checkbox" id="otherCheckbox" name="gender" value="Female">
-        <label for="otherCheckbox"> I am other</label>
-        <button id="submit">SUBMIT</button>
-        <!-- checkboxes area -->
-        <!-- additional comments text area-->
-        <!-- submit button that somehow logs these inputs? -->
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="email@email.com" required />
+      <label for="phoneNumber">Phone Number</label>
+      <input
+        type="tel"
+        id="phoneNumber"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="xxx-xxx-xxxx"
+        required
+      />
+      <label for="number"> Number</label>
+      <input
+        type="number"
+        id="number"
+        min="0"
+        max="100"
+        placeholder="enter a number between 0-100"
+        required
+      />
+      <form action="/action_page.php">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+      </form>
+      <br />
+      <label for="male">Male</label><br />
+      <input type="radio" id="maleGender" name="gender" value="Male" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="femaleGender" name="gender" value="Female" />
+      <label for="Other">Other</label><br />
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="femaleCheckbox"> I am a woman</label>
+      <input type="checkbox" id="femaleCheckbox" name="gender" value="Female" />
+      <label for="femaleCheckbox"> I am a man</label>
+      <input type="checkbox" id="maleCheckbox" name="gender" value="Female" />
+      <label for="otherCheckbox"> I am other</label>
+      <input type="checkbox" id="otherCheckbox" name="gender" value="Female" />
+      <label for="additionalComents">Comments: </label>
+      <input type="textarea" id="additionalComents" />
+
+      <button id="submit">SUBMIT</button>
     </form>
-</div>
+  </div>
 </body>
 
-<script>
-
-</script>
+<script></script>
