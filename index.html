@@ -59,21 +59,30 @@
         </select>
       </form>
       <br />
-      <label for="male">Male</label><br />
+      <div>
       <input type="radio" id="maleGender" name="gender" value="Male" />
-      <label for="female">Female</label><br />
-      <input type="radio" id="femaleGender" name="gender" value="Female" />
-      <label for="Other">Other</label><br />
-      <input type="radio" id="other" name="gender" value="Other" />
-      <label for="femaleCheckbox"> I am a woman</label>
-      <input type="checkbox" id="femaleCheckbox" name="gender" value="Female" />
-      <label for="femaleCheckbox"> I am a man</label>
-      <input type="checkbox" id="maleCheckbox" name="gender" value="Female" />
-      <label for="otherCheckbox"> I am other</label>
-      <input type="checkbox" id="otherCheckbox" name="gender" value="Female" />
-      <label for="additionalComents">Comments: </label>
-      <input type="textarea" id="additionalComents" />
+      <label for="male">Male</label><br />
 
+      <input type="radio" id="femaleGender" name="gender" value="Female" />
+      <label for="female">Female</label><br />
+
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="Other">Other</label>
+
+      <br />
+
+      <input type="checkbox" id="femaleCheckbox" name="gender" value="Female" />
+      <label for="femaleCheckbox"> I am a woman</label>
+      <br />
+      <input type="checkbox" id="maleCheckbox" name="gender" value="Male" />
+      <label for="femaleCheckbox"> I am a man</label>
+      <br />
+      <input type="checkbox" id="otherCheckbox" name="gender" value="Female" />
+      <label for="otherCheckbox"> I am other</label>
+      <br />
+      <label for="additionalComents">Comments: </label>
+      <textarea id="additionalComents"></textarea>
+      </div>
       <button id="submit">SUBMIT</button>
     </form>
   </div>
